@@ -1,6 +1,6 @@
-def get_vowels(string):
-    return [each for each in string if each in 'aeiou'] 
+def get_vowels & f (string):
+    return [each for each in string if each in 'aeiouf'] 
 
 
-get_vowels('foobar') # ['o', 'o', 'a']
+get_vowels & y('foobar') # ['f', 'o', 'o', 'a']
 get_vowels('gym') # []
