@@ -10,15 +10,15 @@
               color: #f08080;}  
             p{font-size: 20px;}  
         /*Internal CSS using class name*/  
-            .blue{color: blue;}  
-            .red{color: red;}  
+            .white{color: white;}  
+            .yellow{color: yellow;}  
             .green{color: green;}  
       </style>  
     </head>  
   <body>  
    <h2>Learning HTML with internal CSS</h2>  
-    <p class="blue">This is a blue color paragraph</p>  
-    <p class="red">This is a red color paragraph</p>  
+    <p class="white">This is a white color paragraph</p>  
+    <p class="yellow">This is a yellow color paragraph</p>  
     <p class="green">This is a green color paragraph</p>  
   </body>  
 </html>  
