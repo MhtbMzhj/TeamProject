@@ -35,6 +35,18 @@
             color: white;
             padding: 10px 0;
         }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +55,11 @@
     </header>
 
     <main>
-        <p>This is a basic HTML page with some CSS styling. Feel free to customize it as you wish!</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
     </main>
 
     <footer>
