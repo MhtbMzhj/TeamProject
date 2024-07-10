@@ -1,18 +1,51 @@
-def calculate_product(num1, num2):
-    return num1 * num2
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Page with Python Interaction</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Basic HTML Page</h1>
+    </header>
 
-def calculate_square(num):
-    return num * num
+    <main>
+        <form id="calculation_form">
+            <input type="number" id="num1" placeholder="Enter the first number">
+            <input type="number" id="num2" placeholder="Enter the second number">
+            <button type="button" id="calculate_btn">Calculate Product</button>
+        </form>
 
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+        <p id="product_result"></p>
+        <p id="square_result"></p>
+    </main>
 
-product_result = calculate_product(num1, num2)
+    <footer>
+        <p>&copy; 2021 My Website. All rights reserved.</p>
+    </footer>
 
-print(f"The product of {num1} and {num2} is: {product_result}")
+    <script>
+        // Function to calculate the product of two numbers
+        function calculateProduct(num1, num2) {
+            return num1 * num2;
+        }
 
-num = int(input("Enter a number to calculate its square: "))
+        // Function to calculate the square of a number
+        function calculateSquare(num) {
+            return num * num;
+        }
 
-square_result = calculate_square(num)
+        document.getElementById('calculate_btn').addEventListener('click', function() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
 
-print(f"The square of {num} is: {square_result}")
+            var productResult = calculateProduct(num1, num2);
+            document.getElementById('product_result').innerText = "The product of " + num1 + " and " + num2 + " is: " + productResult;
+
+            var num = parseInt(prompt("Enter a number to calculate its square:"));
+            var squareResult = calculateSquare(num);
+            document.getElementById('square_result').innerText = "The square of " + num + " is: " + squareResult;
+        });
+    </script>
+</body>
+</html>
+    
